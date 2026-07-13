@@ -32,7 +32,7 @@ independently, not read linearly.
 ---
 
 ## Repository Structure
-
+```
 heritage-machine-series/
 ├── GOVERNANCE/ Legal and editorial policies
 ├── standards/ Engineering and documentation standards
@@ -43,7 +43,7 @@ heritage-machine-series/
 ├── docs/ Architecture, ADRs, and project documentation
 ├── series/ Machine-specific volumes
 └── .github/ CI/CD workflows and issue templates
-
+```
 ---
 
 ## Guiding Principles
