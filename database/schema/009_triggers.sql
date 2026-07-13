@@ -1,0 +1,6 @@
+CREATE TRIGGER trg_assets_touch BEFORE INSERT OR UPDATE ON assets FOR EACH ROW EXECUTE FUNCTION touch_updated_at();
+CREATE TRIGGER trg_measurements_touch BEFORE INSERT OR UPDATE ON measurements FOR EACH ROW EXECUTE FUNCTION touch_updated_at();
+CREATE TRIGGER trg_chapters_touch BEFORE INSERT OR UPDATE ON chapters FOR EACH ROW EXECUTE FUNCTION touch_updated_at();
+CREATE TRIGGER trg_claims_touch BEFORE INSERT OR UPDATE ON claims FOR EACH ROW EXECUTE FUNCTION touch_updated_at();
+CREATE TRIGGER trg_procedures_touch BEFORE INSERT OR UPDATE ON procedures FOR EACH ROW EXECUTE FUNCTION touch_updated_at();
+CREATE TRIGGER trg_events_hash BEFORE INSERT OR UPDATE ON events FOR EACH ROW EXECUTE FUNCTION make_event_hash();

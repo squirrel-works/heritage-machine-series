@@ -1,0 +1,10 @@
+CREATE INDEX assets_source_id_idx ON assets(source_id);
+CREATE INDEX assets_license_id_idx ON assets(license_id);
+CREATE INDEX measurements_calibration_id_idx ON measurements(calibration_id);
+CREATE INDEX measurements_measured_at_idx ON measurements(measured_at);
+CREATE INDEX chapters_volume_chapter_idx ON chapters(volume, chapter_number);
+CREATE INDEX claims_source_id_idx ON claims(source_id);
+CREATE INDEX revisions_object_idx ON revisions(object_kind, object_uuid);
+CREATE INDEX events_object_idx ON events(object_kind, object_uuid);
+CREATE INDEX relationships_from_idx ON relationships(from_kind, from_uuid);
+CREATE INDEX relationships_to_idx ON relationships(to_kind, to_uuid);

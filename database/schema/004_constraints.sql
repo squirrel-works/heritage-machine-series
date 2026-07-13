@@ -1,0 +1,10 @@
+ALTER TABLE contributors ADD CONSTRAINT contributors_canonical_id_chk CHECK (canonical_id <> '');
+ALTER TABLE licenses ADD CONSTRAINT licenses_canonical_id_chk CHECK (canonical_id <> '');
+ALTER TABLE sources ADD CONSTRAINT sources_canonical_id_chk CHECK (canonical_id <> '');
+ALTER TABLE assets ADD CONSTRAINT assets_canonical_id_chk CHECK (canonical_id <> '');
+ALTER TABLE measurements ADD CONSTRAINT measurements_canonical_id_chk CHECK (canonical_id <> '');
+ALTER TABLE chapters ADD CONSTRAINT chapters_canonical_id_chk CHECK (canonical_id <> '');
+ALTER TABLE claims ADD CONSTRAINT claims_canonical_id_chk CHECK (canonical_id <> '');
+ALTER TABLE procedures ADD CONSTRAINT procedures_canonical_id_chk CHECK (canonical_id <> '');
+ALTER TABLE revisions ADD CONSTRAINT revisions_version_chk CHECK (version <> '');
+ALTER TABLE relationships ADD CONSTRAINT relationships_kind_chk CHECK (from_uuid <> to_uuid);
